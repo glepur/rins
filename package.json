@@ -1,6 +1,6 @@
 {
   "name": "rins",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Run npm scripts interactively",
   "bin": "./src/index.js",
   "scripts": {
