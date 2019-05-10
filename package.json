@@ -1,0 +1,23 @@
+{
+  "name": "rins",
+  "version": "0.1.0",
+  "description": "Run npm scripts interactively",
+  "bin": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/glepur/rins.git"
+  },
+  "author": "Goran Lepur <goran.lepur1@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/glepur/rins/issues"
+  },
+  "homepage": "https://github.com/glepur/rins#readme",
+  "dependencies": {
+    "find-package-json": "^1.2.0",
+    "inquirer": "^6.3.1"
+  }
+}
