@@ -25,7 +25,7 @@ inquirer
         ...Object.entries(scripts)
           .map(([name, command]) => ({
             name: `${name} - ${command}`,
-            value: `${name}`
+            value: `run ${name}`
           })),
         {
           name: 'Nothing, take me out of here.',
