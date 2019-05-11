@@ -10,6 +10,13 @@
     "type": "git",
     "url": "git+https://github.com/glepur/rins.git"
   },
+  "keywords": [
+    "interactive",
+    "prompt",
+    "npm",
+    "scripts",
+    "terminal"
+  ],
   "author": "Goran Lepur <goran.lepur1@gmail.com>",
   "license": "MIT",
   "bugs": {
