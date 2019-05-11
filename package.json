@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/glepur/rins#readme",
   "dependencies": {
+    "chalk": "^2.4.2",
     "find-package-json": "^1.2.0",
     "inquirer": "^6.3.1"
   }

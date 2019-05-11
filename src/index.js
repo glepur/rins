@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 const finder = require('find-package-json');
 const inquirer = require('inquirer');
+const chalk = require('chalk');
 const { spawn } = require('child_process');
 
 const { value: packageJson, filename } = finder().next();
@@ -23,9 +24,9 @@ inquirer
       message: 'Choose script to run:',
       choices: [
         ...Object.entries(scripts)
-          .map(([name, command]) => ({
-            name: `${name} - ${command}`,
-            value: `run ${name}`
+          .map(([value, command]) => ({
+            name: `${value} ${chalk.gray(command)}`,
+            value
           })),
         {
           name: 'Nothing, take me out of here.',
@@ -36,7 +37,7 @@ inquirer
   ])
   .then(({ script }) => {
     if (script) {
-      const proc = spawn('npm', script.split(' '), {
+      const proc = spawn('npm', script.split(' ').shift('run'), {
         stdio: 'inherit'
       });
     }
