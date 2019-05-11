@@ -29,7 +29,7 @@ inquirer
             value
           })),
         {
-          name: 'Nothing, take me out of here.',
+          name: chalk.red('Nothing, take me out of here.'),
           value: null
         }
       ]
