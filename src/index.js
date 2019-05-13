@@ -37,7 +37,7 @@ inquirer
   ])
   .then(({ script }) => {
     if (script) {
-      const proc = spawn('npm', script.split(' ').shift('run'), {
+      const proc = spawn('npm', `run ${script}`.split(' '), {
         stdio: 'inherit'
       });
     }
